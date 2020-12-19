@@ -5,24 +5,31 @@
     <title>Carol Liang</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </head>
   <body>
+    <!--name banner-->
+    <div class="banner">
+      <h1 class="text-center">CAROL LIANG</h1>
+    </div>
+
     <!--navbar-->
-    <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light py-0">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item mx-5">
+        <li class="nav-item px-5">
           <a class="nav-link" href="#">about me</a>
         </li>
-        <li class="nav-item mx-5">
-          <a class="nav-link" href="#">engineering</a>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#engineering">engineering</a>
         </li>
-        <li class="nav-item mx-5">
+        <li class="nav-item px-5">
           <a class="nav-link" href="#">artwork</a>
         </li>
-        <li class="nav-item mx-5">
+        <li class="nav-item px-5">
           <a class="nav-link" href="#resumé">resumé</a>
         </li>
-        <li class="nav-item mx-5">
+        <li class="nav-item px-5">
           <a class="nav-link" href="#contact">contact</a>
         </li>
       </ul>
@@ -31,33 +38,52 @@
     <!--header/about me-->
     <div class="container">
       <div class="jumbotron mt-5">
-        <h1>Hi! I'm Carol, and welcome to my personal site.</h1>
-        <p>I am a software engineer as well as a student. I am currently studying computer engineering and computer science at the University of Southern California.</p>
-        <p>Outside of academics and career, I enjoy oil painting, reading, personal finance, and pushing for gender equity in the tech space.</p>
+        <h2 class="display-4">Hi! I'm Carol. Welcome to my site.</h2>
+        <p class="lead">I am a software engineer as well as a student. I am currently studying computer engineering and computer science at the University of Southern California.</p>
+        <p class="lead">Outside of academics and career, I enjoy oil painting, reading, personal finance, and pushing for gender equity in the tech space.</p>
+      </div>
+    </div>
+
+    <!--engineering experience-->
+    <div class="container" id="engineering">
+      <div class="mx-5 my-3">
+        <h2 class="text-center mt-5 mb-2">engineering experience</h2>
+      </div>
+    </div>
+
+    <!--artwork-->
+    <div class="container" id="engineering">
+      <div class="mx-5 my-3">
+        <h2 class="text-center mt-5 mb-2">my artwork</h2>
       </div>
     </div>
 
     <!--resumé-->
     <div class="container">
-      <div class="mx-5" id="resumé">
+      <div class="mx-5 my-3" id="resumé">
+        <h2 class="text-center mt-5 mb-2">resumé</h2>
         <object class="mx-auto d-block" data="./CarolLiang_resume.pdf" type="application/pdf" style="min-height:100vh;width:80%"></object>
       </div>
     </div>
 
     <!--contact-->
     <div class="container" id="contact">
-      <div class="row mt-5 mx-auto">
+      <h2 class="text-center mt-5">contact me</h2>
+      <h3>Please feel free to contact me through email: carollia@usc.edu for opportunities, speaking engagements, or just a coffee chat!</h3>
+      <h3>Check out my linkedin, github, or instagram for more info.</h3>
+
+      <div class="row mx-3 mx-auto" style="width:90%">
         <div class="col-sm text-center">
-          <a href="https://www.linkedin.com/in/carolliangce/" target="_blank" title="linkedin profile"><img src="./linkedin.png" style="max-width:150px;height:auto" class="img-fluid"></a>
+          <a href="https://www.linkedin.com/in/carolliangce/" target="_blank" title="linkedin profile"><img src="./linkedin.png" style="max-width:100px;height:auto" class="img-fluid"></a>
         </div>
         <div class="col-sm text-center">
-          <a href="https://github.com/cchuqiao" target="_blank" title="github profile"><img src="./github.png" style="max-width:150px;height:auto" class="img-fluid"></a>
+          <a href="https://github.com/cchuqiao" target="_blank" title="github profile"><img src="./github.png" style="max-width:100px;height:auto" class="img-fluid"></a>
         </div>
         <div class="col-sm text-center">
-          <a href="https://www.instagram.com/_chuqiao/" target="_blank" title="instagram profile"><img src="./instagram.png" style="max-width:150px;height:auto" class="img-fluid"></a>
+          <a href="https://www.instagram.com/_chuqiao/" target="_blank" title="instagram profile"><img src="./instagram.png" style="max-width:100px;height:auto" class="img-fluid"></a>
         </div>
         <div class="col-sm text-center">
-          <a href="mailto: carollia@usc.edu" target="_blank" title="email"><img src="./email.png" style="max-width:150px;height:auto" class="img-fluid"></a>
+          <a href="mailto: carollia@usc.edu" target="_blank" title="email"><img src="./email.png" style="max-width:100px;height:auto" class="img-fluid"></a>
         </div>
       </div>
     </div>
