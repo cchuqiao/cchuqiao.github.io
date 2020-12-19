@@ -3,3 +3,11 @@
 .lead { font-size: medium; }
 
 #banner {font-family: 'El Messiri', sans-serif;}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.fullscreen {height: 100%;}
