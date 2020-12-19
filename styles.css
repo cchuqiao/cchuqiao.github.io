@@ -1,6 +1,15 @@
-.container { padding-top:3%; }
+.container { 
+    margin-bottom: 3%;
+}
 
 .lead { font-size: medium; }
+
+.section {
+    font-size: xx-large;
+    font-weight: normal;
+    padding-top: 4.8rem;
+    padding-bottom: 1rem;
+}
 
 #banner {font-family: 'El Messiri', sans-serif;}
 
@@ -10,4 +19,7 @@ body {
   width: 100%;
 }
 
-.fullscreen {height: 100%;}
+.fullscreen {
+    height: 100%;
+    padding-top: 2%;
+}
