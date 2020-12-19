@@ -24,7 +24,10 @@
           <a class="nav-link" href="#engineering">engineering</a>
         </li>
         <li class="nav-item px-5">
-          <a class="nav-link" href="#">artwork</a>
+          <a class="nav-link" href="#artwork">artwork</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#interests">interests</a>
         </li>
         <li class="nav-item px-5">
           <a class="nav-link" href="#resumé">resumé</a>
@@ -38,54 +41,123 @@
     <!--header/about me-->
     <div class="container">
       <div class="jumbotron mt-5">
-        <h2 class="display-4">Hi! I'm Carol. Welcome to my site.</h2>
-        <p class="lead">I am a software engineer as well as a student. I am currently studying computer engineering and computer science at the University of Southern California.</p>
+        <h2 class="display-4">Hi! Welcome to my site.</h2>
+        <p class="lead">I am a software engineer, artist, and student. I am currently studying computer engineering and computer science at the University of Southern California.</p>
         <p class="lead">Outside of academics and career, I enjoy oil painting, reading, personal finance, and pushing for gender equity in the tech space.</p>
       </div>
     </div>
 
     <!--engineering experience-->
     <div class="container" id="engineering">
-      <div class="mx-5 my-3">
-        <h2 class="text-center mt-5 mb-2">engineering experience</h2>
+      <div class="mx-5">
+        <h2 class="text-center">engineering experience</h2>
       </div>
     </div>
 
     <!--artwork-->
-    <div class="container" id="engineering">
-      <div class="mx-5 my-3">
-        <h2 class="text-center mt-5 mb-2">my artwork</h2>
+    <div class="container" id="artwork">
+      <div class="mx-5">
+        <h2 class="text-center">my artwork</h2>
+      </div>
+    </div>
+
+    <!--other interests-->
+    <div class="container" id="interests">
+      <div class="mx-5">
+        <h2 class="text-center">all my other interests</h2>
       </div>
     </div>
 
     <!--resumé-->
-    <div class="container">
-      <div class="mx-5 my-3" id="resumé">
-        <h2 class="text-center mt-5 mb-2">resumé</h2>
+    <div class="container" id="resumé">
+      <div class="mx-5">
+        <h2 class="text-center">resumé</h2>
         <object class="mx-auto d-block" data="./CarolLiang_resume.pdf" type="application/pdf" style="min-height:100vh;width:80%"></object>
       </div>
     </div>
 
     <!--contact-->
     <div class="container" id="contact">
-      <h2 class="text-center mt-5">contact me</h2>
-      <h3>Please feel free to contact me through email: carollia@usc.edu for opportunities, speaking engagements, or just a coffee chat!</h3>
-      <h3>Check out my linkedin, github, or instagram for more info.</h3>
+      <section class="resume-section p-4 p-lg-5 text-center mb-4" id="contact">
+        <div class="my-auto">
+          <h2 class="mb-4">Contact Me</h2>
 
-      <div class="row mx-3 mx-auto" style="width:90%">
-        <div class="col-sm text-center">
-          <a href="https://www.linkedin.com/in/carolliangce/" target="_blank" title="linkedin profile"><img src="./linkedin.png" style="max-width:100px;height:auto" class="img-fluid"></a>
+          <ul class="fa-ul mb-4 ml-0">
+            <li id="mail-address">
+                <i class="fas fa-envelope-open mr-2 contact-icons"></i
+                >carollia@usc.edu</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-mobile-alt mr-2 contact-icons"></i>(508) 816-1405
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>Los Angeles, CA
+            </li>
+          </ul>
+
+          <p>
+            ...or leave your message below and I will be back to you as soon as
+            possible. <br> Feel free to check out my LinkedIn, Instagram, and Github too.
+          </p>
+
+          <div class="row mx-3 my-5 mx-auto" style="width:60%">
+            <div class="col-sm text-center">
+              <a href="https://www.linkedin.com/in/carolliangce/" target="_blank" title="linkedin profile"><img src="./linkedin.png" style="max-width:80px;height:auto" class="img-fluid"></a>
+            </div>
+            <div class="col-sm text-center">
+              <a href="https://github.com/cchuqiao" target="_blank" title="github profile"><img src="./github.png" style="max-width:80px;height:auto" class="img-fluid"></a>
+            </div>
+            <div class="col-sm text-center">
+              <a href="https://www.instagram.com/_chuqiao/" target="_blank" title="instagram profile"><img src="./instagram.png" style="max-width:80px;height:auto" class="img-fluid"></a>
+            </div>
+            <div class="col-sm text-center">
+              <a href="mailto: carollia@usc.edu" target="_blank" title="email"><img src="./email.png" style="max-width:80px;height:auto" class="img-fluid"></a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form d-flex flex-column align-items-center"
+            action="https://formspree.io/f/xleooegn"
+            method="POST"
+          >
+            <div class="form-group w-75">
+              <input
+                type="name"
+                class="form-control"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group w-75">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                name="_replyto"
+                required
+              />
+            </div>
+
+            <div class="form-group w-75">
+              <textarea
+                class="form-control"
+                type="text"
+                placeholder="Message"
+                rows="7"
+                name="Message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit btn-dark w-75">Send</button>
+          </form>
         </div>
-        <div class="col-sm text-center">
-          <a href="https://github.com/cchuqiao" target="_blank" title="github profile"><img src="./github.png" style="max-width:100px;height:auto" class="img-fluid"></a>
-        </div>
-        <div class="col-sm text-center">
-          <a href="https://www.instagram.com/_chuqiao/" target="_blank" title="instagram profile"><img src="./instagram.png" style="max-width:100px;height:auto" class="img-fluid"></a>
-        </div>
-        <div class="col-sm text-center">
-          <a href="mailto: carollia@usc.edu" target="_blank" title="email"><img src="./email.png" style="max-width:100px;height:auto" class="img-fluid"></a>
-        </div>
-      </div>
+      </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"></script>
     </div>
 
 
