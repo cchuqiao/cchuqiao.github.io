@@ -11,6 +11,11 @@
     padding-bottom: 1rem;
 }
 
+.art-image {
+    max-height: 20rem;
+    object-fit: cover;
+}
+
 #banner {font-family: 'El Messiri', sans-serif;}
 
 html,
