@@ -25,6 +25,10 @@
    border-radius: 0.4rem;
 }
 
+.art-grid::after {
+    transition: opacity 0.4s ease;
+}
+
 .art-grid:hover::after {
     position: absolute;
     border-radius: 0.4rem;
@@ -57,6 +61,9 @@
     object-position: 1px 13%;
 }
 
+.modal-dialog-centered {
+    margin-top: -2%;
+}
 #banner {font-family: 'El Messiri', sans-serif;}
 
 html,
