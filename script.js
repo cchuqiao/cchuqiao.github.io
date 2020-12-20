@@ -17,5 +17,6 @@ $(document).on('click', '.nav-item', function(){
 //pop-up modal for artwork
 $(document).on("click", '.art-image', function() {
     $('#show-img').attr('src', $(this).attr('src')); // here asign the image to the modal when the user click the enlarge link
+    $('.modal-body').find('p').html($(this).parent().parent().find('p').html());
     $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });

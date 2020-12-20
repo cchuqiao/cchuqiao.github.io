@@ -72,6 +72,10 @@ body {
   width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .fullscreen {
     height: 100%;
     padding-top: 1.5%;
