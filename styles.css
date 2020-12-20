@@ -15,12 +15,28 @@
     max-height: 19rem;
     max-width: 27rem;
     padding: 0.3rem;
+    position: relative;
+    display: inline-block;
 }
 .art-image {
    width: 100%;
    height: 100%;
    object-fit: cover;
    border-radius: 0.4rem;
+}
+
+.art-grid:hover::after {
+    position: absolute;
+    border-radius: 0.4rem;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    pointer-events: none;
 }
 
 #art-dog{
