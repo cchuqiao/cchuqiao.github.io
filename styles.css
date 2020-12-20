@@ -30,13 +30,27 @@
     border-radius: 0.4rem;
     z-index: 1;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.6;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     content: '';
     pointer-events: none;
+}
+
+.art-grid .art-info {
+    z-index: 2;
+    position:absolute;
+    color: white;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility:hidden;
+}
+
+.art-grid:hover .art-info {
+    visibility: visible;
 }
 
 #art-dog{
