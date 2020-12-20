@@ -8,9 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
   </head>
   <body>
+    <!--modal for artwork-->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">          
+            <img class="img-fluid" src="" id="show-img">
+          </div>  
+        </div>
+      </div>       
+    </div>
+
     <!--name banner-->
     <div class="banner">
       <h1 class="text-center pt-4 pb-3 mb-0" id="banner">CAROL LIANG</h1>
@@ -46,7 +58,7 @@
         <div class="col-7">
             <div style="background:transparent !important" class="jumbotron pl-0 py-4">
               <h2 class="display-4">Hi! My name is Carol.</h2>
-              <p class="lead">I am a Chinese-American software engineer, artist, and student focused on backend engineering for consumer-facing products.
+              <p class="lead">I am a Chinese-American student, artist, and software engineer focused on backend development for consumer-facing products.
                 I currently study computer engineering and computer science at the University of Southern California. This summer, I'll be interning at Stripe as a software engineer.</p>
               <p class="lead">I'm passionate about the intersection between experience, technology, and art. 
                 I believe that usability and accessibilty in a product is just as important as its underlying technical capabilities. 
@@ -89,15 +101,15 @@
 
     <!--artwork-->
     <div class="container" id="artwork">
-      <div class="mx-5">
+      <div class="mx-5 text-center">
         <h3 class="display-4 section">Artwork</h3>
       </div>
       <div class="row justify-content-center" id="gallery">
         <div class="col-md-6 col-sm-12 art-grid">
-          <img class="art-image" src="images/dog.jpg">
+          <img class="art-image" id="art-dog" src="images/dog.jpg">
         </div>
         <div class="col-md-6 col-sm-12 art-grid">
-          <img class="art-image" src="images/diego_desk.JPG">
+          <img class="art-image" id="art-diego" src="images/diego_desk.JPG">
         </div>
         <div class="col-md-6 col-sm-12 art-grid">
           <img class="art-image" src="images/piano.JPG">
@@ -139,7 +151,7 @@
               <i class="fas fa-mobile-alt mr-2 contact-icons"></i>(508) 816-1405
             </li>
             <li>
-              <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>Los Angeles, CA
+              <i class="fas fa-map-marker-alt mr-2 contact-icons"></i>Los Angeles, CA / Boston, MA
             </li>
           </ul>
 
