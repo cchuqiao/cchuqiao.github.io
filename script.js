@@ -17,7 +17,7 @@ $(document).on('click', '.nav-item', function(){
 $(window).scroll(function(){
     var position = $(this).scrollTop();
     $('.navbar-section').each(function() {
-        var target = $(this).offset().top + (-40);
+        var target = $(this).offset().top + (-100);
         var id = $(this).attr('id');
 
         if (position >= target) {
