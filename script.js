@@ -1,3 +1,5 @@
+var wasClicked = false;
+
 $(window).scroll(function(){
     if ($(window).scrollTop() == 0) {
      $(".navbar").removeClass("fixed-top");
@@ -8,10 +10,15 @@ $(window).scroll(function(){
 
 //navbar visual controls on click
 $(document).on('click', '.nav-item', function(){ 
+    wasClicked = true;
     $('.nav-item').removeClass("active bg-dark");
     $('.nav-item > a').removeClass("text-light");
     $(this).addClass('active bg-dark');
     $(this).find('a').addClass("text-light");
+
+    window.setTimeout(function() {
+        wasClicked = false;
+    }, 1000)
 });
 //navbar visual controls on scroll
 $(window).scroll(function(){
@@ -20,8 +27,7 @@ $(window).scroll(function(){
         var target = $(this).offset().top + (-100);
         var id = $(this).attr('id');
 
-        if (position >= target) {
-            console.log(id);
+        if (position >= target && (wasClicked == false)) {
             $('.nav-link').parent().removeClass('active bg-dark');
             $('.nav-link').removeClass('text-light');
             $('.nav-link[href=\\#' + id + ']').parent().addClass('active bg-dark');

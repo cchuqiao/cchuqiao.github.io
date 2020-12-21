@@ -93,3 +93,7 @@ html {
     height: 90%;
     padding-top: 1.5%;
 }
+
+.img-thumbnail {
+    border: none;
+}
