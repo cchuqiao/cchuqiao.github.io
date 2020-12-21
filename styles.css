@@ -2,6 +2,16 @@
     margin-bottom: 3%;
 }
 
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: large;
+    }
+    #greeting {
+        font-size: 250%;
+    }
+
+}
+
 .lead { font-size: medium; }
 h5 { font-weight: 300; }
 h4 {font-weight: 400; }
