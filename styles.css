@@ -12,6 +12,10 @@
 
 }
 
+/*.jumbotron*/ .lead {
+    line-height: 1.8;
+}
+
 .lead { font-size: medium; }
 h5 { font-weight: 300; }
 h4 {font-weight: 400; }
