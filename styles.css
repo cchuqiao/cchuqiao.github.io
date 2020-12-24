@@ -123,9 +123,9 @@ html {
     margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .carousel-inner {
-        width: 70%;
+        width: 65%;
     }
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
