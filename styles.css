@@ -118,3 +118,17 @@ html {
 .img-thumbnail {
     border: none;
 }
+
+.carousel-inner {
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .carousel-inner {
+        width: 55%;
+    }
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+}
