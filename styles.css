@@ -125,10 +125,13 @@ html {
 
 @media (min-width: 1200px) {
     .carousel-inner {
-        width: 55%;
+        width: 70%;
     }
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
+}
+.carousel-item {
+    padding: 4rem;
 }
 }
