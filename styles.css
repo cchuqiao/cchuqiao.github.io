@@ -132,6 +132,7 @@ html {
     filter: invert(100%);
 }
 .carousel-item {
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 }
