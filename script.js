@@ -1,7 +1,8 @@
 var wasClicked = false;
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() == 0) {
+    let bannerheight = $('.banner').height();
+    if ($(window).scrollTop() < bannerheight) {
      $(".navbar").removeClass("fixed-top");
   } else {
      $(".navbar").addClass("fixed-top");
