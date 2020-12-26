@@ -89,6 +89,7 @@ h4 {font-weight: 400; }
 
 .social-icon {
     opacity: 0.7;
+    padding-top: 0.3rem;
 }
 
 html,
@@ -123,7 +124,7 @@ html {
 
 @media (min-width: 1000px) {
     .carousel-inner {
-        width: 65%;
+        width: 68%;
     }
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
@@ -133,4 +134,10 @@ html {
     padding-left: 4rem;
     padding-right: 4rem;
 }
+}
+
+.skill {
+    filter: saturate(5) grayscale(100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
