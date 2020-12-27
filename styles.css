@@ -2,6 +2,15 @@
     margin-bottom: 3%;
 }
 
+.bg-dark {
+    background-color: #9b5534!important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: large;
@@ -17,7 +26,10 @@
 }
 
 .lead { font-size: medium; }
-h5 { font-weight: 300; }
+h5 { 
+    font-weight: 300; 
+    color: #9b5534;
+}
 h4 {font-weight: 300; }
 .display-4 {font-weight: 200;}
 
