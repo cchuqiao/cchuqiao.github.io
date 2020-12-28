@@ -166,3 +166,9 @@ html {
     background-color: #9b5534;
     color: #f8f9fa;
 }
+
+.form-control:focus{
+    border-color: #9b5534;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
