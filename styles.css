@@ -179,3 +179,7 @@ html {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+#me-picture {
+    background-color:#f7f0ed;
+}
