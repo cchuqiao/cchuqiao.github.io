@@ -147,15 +147,15 @@ html {
 
 @media (min-width: 1000px) {
     .carousel-inner {
-        width: 68%;
+        width: 62%;
     }
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
 .carousel-item {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 }
 
