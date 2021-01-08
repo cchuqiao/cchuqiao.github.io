@@ -55,9 +55,9 @@ h4 {font-weight: 200; }
 }
 
 .art-grid {
-    max-height: 19rem;
-    max-width: 25rem;
-    padding: 0.3rem;
+    max-height: 23rem;
+    max-width: 33rem;
+    padding: 0.5rem;
     position: relative;
     display: inline-block;
 }
