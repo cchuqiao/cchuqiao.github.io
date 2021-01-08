@@ -171,10 +171,45 @@ html {
     .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
-.carousel-item {
+#friendflixCarousel .carousel-item {
     padding-left: 3rem;
     padding-right: 3rem;
 }
+}
+
+@media (max-width: 600px) {
+    #carouselIntroduction .carousel-inner {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 600px) {
+    #carouselIntroduction .carousel-inner {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #carouselIntroduction .carousel-inner {
+        height: 30rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #carouselIntroduction .carousel-inner {
+        height: 32rem;
+    }
+}
+
+#carouselIntroduction .carousel-item{
+    position: relative;
+    height: 100%;
+}
+
+#carouselIntroduction .carousel-img {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .skill {
