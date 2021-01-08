@@ -163,20 +163,6 @@ html {
     margin: 0 auto;
 }
 
-@media (min-width: 1000px) {
-    .carousel-inner {
-        width: 62%;
-    }
-    .carousel-control-next,
-    .carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
-}
-#friendflixCarousel .carousel-item {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-}
-
 @media (max-width: 600px) {
     #carouselIntroduction .carousel-inner {
         height: 20rem;
@@ -199,6 +185,18 @@ html {
     #carouselIntroduction .carousel-inner {
         height: 32rem;
     }
+
+    .carousel-inner {
+        width: 62%;
+    }
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+#friendflixCarousel .carousel-item {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 }
 
 #carouselIntroduction .carousel-item{
