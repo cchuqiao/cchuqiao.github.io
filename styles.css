@@ -36,10 +36,10 @@
 }
 
 /*.jumbotron*/ .lead {
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
-.lead { font-size: medium; }
+.lead { font-size: 0.95rem; }
 h5 { 
     font-weight: 300; 
     color: #8e807c;
@@ -48,7 +48,7 @@ h4 {font-weight: 200; }
 .display-4 {font-weight: 200;}
 
 .section {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 200;
     padding-top: 4.8rem;
     padding-bottom: 1rem;
@@ -183,11 +183,11 @@ html {
 
 @media (min-width: 992px) {
     #carouselIntroduction .carousel-inner {
-        height: 32rem;
+        height: 30rem;
     }
 
     .carousel-inner {
-        width: 62%;
+        width: 58%;
     }
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
