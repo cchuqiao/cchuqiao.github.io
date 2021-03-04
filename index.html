@@ -1,384 +1,422 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Carol Liang's personal site. Engineering student at USC, software engineering at Stripe and LinkedIn, artist.">
-    <title>Carol Liang</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-  </head>
-  <body>
-    <!--modal for artwork-->
-    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body text-center">          
-            <img class="img-fluid" src="" id="show-img">
-            <p class="lead mb-0 mt-2"></p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Carol Liang's personal site. Engineering student at USC, software engineering at Stripe and LinkedIn, artist.">
+  <title>Carol Liang</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <!--modal for artwork-->
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img class="img-fluid" src="" id="show-img">
+          <p class="lead mb-0 mt-2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--name banner-->
+  <div class="banner">
+    <a href="#" style="color: black; text-decoration:none;">
+      <h1 class="text-center py-4 mb-0" id="banner">CAROL LIANG</h1>
+    </a>
+  </div>
+
+  <!-- navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light py-0 shadow" style="background-color: white;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto nav-fill w-75">
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#" style="white-space:nowrap;">about me</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#engineering">engineering</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#artwork">artwork</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#resume">resumé</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--header/about me-->
+  <div class="container mb-0 pb-0 pb-lg-3 mt-lg-3 navbar-section header-section" id="">
+    <div class="row d-flex flex-wrap align-items-center px-4">
+      <div class="col-12 col-lg-7 order-12 order-md-1">
+        <div style="background:transparent !important" class="jumbotron pl-0 pt-4 pb-0">
+          <h2 class="display-4" id="greeting">Hello! I'm Carol.</h2>
+          <p class="lead">I am a Chinese-American student, artist, and software engineer.
+            I currently study <a class="link"
+              href="https://www.cs.usc.edu/academic-programs/undergrad/computer-engineering-and-computer-science/"
+              target="_blank">computer engineering and computer science</a>
+            at the <a class="link" href="https://www.usc.edu/" target="_blank">University of Southern California</a>.
+            This summer, I'll be interning at <a class="link" href="https://stripe.com/" target="_blank">Stripe</a> in
+            NYC.</p>
+          <p class="lead">I'm passionate about the intersection between the visual arts, the human experience, and tech.
+            I
+            believe that usability and accessibility in a product is just as important as its underlying
+            functionalities, and hope to create meaningful experiences using my background in the fine
+            arts, classical music, and computer
+            science.</p>
+          <p class="lead">My interests include oil painting, personal finance, eating good food, and pushing for gender
+            equity in the tech industry.
+            I volunteer with organizations such as the <a class="link" href="https://www.sweusc.com/"
+              target="_blank">Society of Women Engineers</a>
+            and <a href="https://techtogether.io/" target="_blank" class="link">TechTogether</a> to empower
+            underrepresented groups in engineering.</p>
+          <p class="lead">Currently reading: <i>The Idea of Justice</i> by <a class="link"
+              href="https://scholar.harvard.edu/sen/home" target="_blank">Amartya Sen</a>
+            <br>Currently learning: work-life-school-sleep balance</p>
+        </div>
+      </div>
+      <div
+        class="col-11 col-lg-5 px-0 mx-auto mt-5 mb-3 order-1 order-md-12 justify-content-center p-2 p-md-3 py-lg-3 shadow">
+        <div id="carouselIntroduction" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3300">
+          <div class="carousel-inner w-100">
+            <div class="carousel-item active">
+              <div class="carousel-img">
+                <img class="img-fluid d-block w-100" src="images/me.png" alt="Carol Liang">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img">
+                <img class="img-fluid d-block w-100" src="images/bay_state.jpeg" alt="Carol Liang">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img">
+                <img class="img-fluid d-block w-100" src="images/night_lights.jpeg" alt="Carol Liang">
+              </div>
+            </div>
           </div>
         </div>
-      </div>       
+      </div>
     </div>
+  </div>
 
-    <!--name banner-->
-    <div class="banner">
-      <a href="#" style="color: black; text-decoration:none;"><h1 class="text-center py-4 mb-0" id="banner">CAROL LIANG</h1></a>
+  <!--engineering experience-->
+  <div class="container navbar-section px-lg-4" id="engineering">
+    <div class="mx-1 mx-lg-5 text-center">
+      <h3 class="display-4 section mt-0">ENGINEERING</h3>
     </div>
+    <div class="row d-flex flex-column mx-1 mx-lg-5 px-3 px-lg-5">
+      <div class="my-2">
+        <h4>Featured Project: FriendFlix</h4>
+        <div class="lead">Full stack web application that facilitates sharing of movies and shows with your community.
+          Created using the <a class="link" href="https://www.mongodb.com/mern-stack" target="_blank">MERN</a>
+          stack (MongoDB, Express, React and Node.js). Used
+          the <a class="link" href="https://developers.themoviedb.org/" target="_blank">MovieDB API</a> for accessing
+          movie and TV databases and
+          <a class="link" href="https://getstream.io/" target="_blank">GetStream</a> for asynchronous activity feeds.
+          Features include a real-time friend feed for updates on what your friends are watching, integrated information
+          on each show and movie, and recommendations for your next watch.<br>Source code and build instructions
+          <a class="link" href="https://github.com/cchuqiao/friendflix" target="_blank">here</a>.
+          <br> Presentation deck <a class="link"
+            href="https://docs.google.com/presentation/d/e/2PACX-1vQEUlppvVk1zEjTBfzvpjlqF6fvOicceYuLmlZw0v3D_2tirs7sY4V1bLTaATdquZ5_CUh3cIM2wxG-/pub?start=true&loop=true&delayms=5000"
+            target="_blank">here</a>.
+        </div>
+        <div id="friendflixCarousel" class="carousel slide my-2" data-ride="carousel" data-interval="3300">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/friendflix-home.png" alt="friendflix home">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/friendflix-login.png" alt="friendflix login">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/friendflix-signup.png" alt="friendflix login">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/friendflix-focus.png" alt="friendflix focus">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#friendflixCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#friendflixCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="my-2">
+        <h4>Professional Experience</h4>
+        <div class="row my-3">
+          <div class="col-12 experiences">
+            <a class="link" href="https://www.splunk.com/" target="_blank">
+              <h5>Splunk Technology</h5>
+            </a>
+            <div class="lead"><i>Software Engineering Intern on the Indexing team // San Francisco, CA</i></div>
+            <div class="lead">(Summer 2020) Built out features to improve performance and usability of SmartStore,
+              Splunk's cloud storage solution.
+              Definitely my most difficult experience thus far due to the nature of the product and the C++ language.
+              Learned a lot about
+              performance optimization, distributed systems, industry-level C++, and ramping up to a huge codebase
+              virtually.</div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12 experiences">
+            <a class="link" href="https://www.linkedin.com/" target="_blank">
+              <h5>LinkedIn</h5>
+            </a>
+            <div class="lead"><i>Software Engineering Intern on the Flagship Search team // Mountain View, CA</i></div>
+            <div class="lead">(Fall 2019) Designed and built a client-facing feature to collect feedback from LinkedIn
+              users
+              directly on their search page. Acted as a project manager too, since this feature was built from
+              the ground up, including meeting with legal teams. Learned about fullstack
+              and API development in Ember and Java/Play, cross-team collaboration, user empathy, and how
+              to set up lots of meetings.</div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12 experiences">
+            <a class="link" href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">
+              <h5>Intel Corporation</h5>
+            </a>
+            <div class="lead"><i>Software Engineering Intern on the Multimedia team // Portland, OR</i></div>
+            <div class="lead">(Summer 2019) My first engineering internship. Developed audio capabilities/features for
+              Intel's video conferencing software using PortAudio APIs and WebRTC. Learned about C# and C/C++ app
+              development, software testing and profiling,
+              and how to navigate corporate culture.</div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12 experiences">
+            <a class="link" href="https://rapidsos.com/" target="_blank">
+              <h5>RapidSOS</h5>
+            </a>
+            <div class="lead"><i>Operations Intern // New York City, NY</i></div>
+            <div class="lead">(Summer 2018) My first internship ever! After my first year of college, I worked across
+              HR, marketing, internal operations, and legal to implement new security processes
+              and implement diversity and inclusion initiatives at this healthcare tech startup. Learned about the
+              recruitment lifecycle, cross-team collaboration, and my interest in working
+              at a startup for fulltime.</div>
+          </div>
+        </div>
+      </div>
+      <div class="my-2">
+        <h4>Teaching Experience</h4>
+        <div class="row my-3">
+          <div class="col-12 experiences">
+            <a class="link" href="https://viterbischool.usc.edu/" target="_blank">
+              <h5>University of Southern California</h5>
+            </a>
+            <div class="lead"><i>Course Producer for CSCI201: Software Engineering // Los Angeles, CA</i></div>
+            <div class="lead">(Spring 2020) Taught students the fundamentals of software engineering through labs and
+              office hours, as well as graded assignments and projects.
+              Content included: Java, concurrency, object-oriented programming, frontend languages, full-stack web
+              development using MERN, SQL, group projects using agile methodology.
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12 experiences">
+            <a class="link" href="https://www.bu.edu/" target="_blank">
+              <h5>Boston University</h5>
+            </a>
+            <div class="lead"><i>Teaching Assistant for EC330: Applied Algorithms // Boston, MA</i></div>
+            <div class="lead">(Spring 2019) Taught students core data structures and algorithms concepts with C++
+              through labs and office hours, as well as completed and graded assignments and projects.
+              Topics included: big-O analysis, proofs of correctness and runtime, graph algorithms, searching and
+              sorting algorithms, dynamic programming, optimized data structures.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-2">
+        <h4>Technical Skills</h4>
+        <div class="d-flex flex-wrap row my-3 text-center">
+          <div class="col-3 col-md">
+            <img src="images/cpp.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/java.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/javascript.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/html.jpg" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/python.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/mysql.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/matlab.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+          <div class="col-3 col-md">
+            <img src="images/git.png" style="max-width:60px;height:auto" class="img-fluid skill">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light py-0 shadow" style="background-color: white;">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>      
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto nav-fill w-75">
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#" style="white-space:nowrap;">about me</a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#engineering">engineering</a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#artwork">artwork</a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#resume">resumé</a>
-          </li>
-          <li class="nav-item px-5">
-            <a class="nav-link" href="#contact">contact</a>
-          </li>
+  <!--artwork-->
+  <div class="container navbar-section" id="artwork">
+    <div class="mx-5 text-center mb-3">
+      <h3 class="display-4 section">ARTWORK</h3>
+      <div class="lead">Please contact me if you would like to purchase a painting or request a commission.</div>
+    </div>
+    <div class="row justify-content-center shadow py-md-5" id="gallery">
+      <div class="col-md-5 col-sm-11 art-grid">
+        <a href="javascript:void(0);"><img class="art-image" src="images/piano.JPG"></a>
+        <div class="art-info">
+          <p class="lead">Used Piano (oil, sold) </p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-11 art-grid">
+        <a href="javascript:void(0);"><img class="art-image" id="art-diego" src="images/diego_desk.JPG"></a>
+        <div class="art-info">
+          <p class="lead">Anniversary Pink (oil, sold)</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-11 art-grid">
+        <a href="javascript:void(0);"><img class="art-image" src="images/seattle.jpg"></a>
+        <div class="art-info">
+          <p class="lead">Seattle Sunset (acrylic)</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-11 art-grid">
+        <a href="javascript:void(0);"><img class="art-image" id="art-dog" src="images/dog.jpg"></a>
+        <div class="art-info">
+          <p class="lead">Lily (oil, sold)</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-11 art-grid">
+        <a href="javascript:void(0);"><img class="art-image" src="images/march_2.jpg"></a>
+        <div class="art-info">
+          <p class="lead">Women's March (acrylic)</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-11 art-grid">
+        <a href="javascript:void(0);"><img class="art-image" src="images/waterfall_v2.jpg"></a>
+        <div class="art-info">
+          <p class="lead">Lush Sun (oil pastel)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--resume-->
+  <div class="container navbar-section" id="resume">
+    <div class="mx-5 text-center mb-3">
+      <h3 class="display-4 section">RESUMÉ</h3>
+      <div class="row mx-auto" style="width:50%">
+        <div class="col-12 col-md-6">
+          <a class="link" href="./CarolLiang_resume.pdf" target="_blank">
+            <h5>Preview</h5>
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a class="link" download href="./CarolLiang_resume.pdf">
+            <h5>Download</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--contact-->
+  <div class="container navbar-section" id="contact">
+    <section class="resume-section text-center mb-4 mx-lg-5" id="contact">
+      <div class="my-auto">
+        <h3 class="mb-2 display-4 section">CONTACT ME</h3>
+
+        <ul class="fa-ul mb-4 ml-0 lead">
+          <li>carollia[at]usc[dot]edu // 508.816.1405</li>
         </ul>
+
+        <p class="lead">
+          ...or leave your message below and I will be back to you as soon as
+          possible. <br> Feel free to also connect with me on LinkedIn or Instagram, or see some of my work on Github.
+        </p>
+
+        <div class="row mx-3 my-4 mx-auto" style="width:40%">
+          <div class="col-6 col-md-3 text-center social-icon">
+            <a href="https://www.linkedin.com/in/carolliangce/" target="_blank" title="linkedin profile"><img
+                src="images/linkedin.png" style="max-width:50px;height:auto" class="img-fluid"></a>
+          </div>
+          <div class="col-6 col-md-3 text-center social-icon">
+            <a href="https://github.com/cchuqiao" target="_blank" title="github profile"><img src="images/github.png"
+                style="max-width:50px;height:auto" class="img-fluid"></a>
+          </div>
+          <div class="col-6 col-md-3 text-center social-icon">
+            <a href="https://www.instagram.com/_chuqiao/" target="_blank" title="instagram profile"><img
+                src="images/instagram.png" style="max-width:50px;height:auto" class="img-fluid"></a>
+          </div>
+          <div class="col-6 col-md-3 text-center social-icon">
+            <a href="mailto: carollia@usc.edu" target="_blank" title="email"><img src="images/email.png"
+                style="max-width:50px;height:auto" class="img-fluid"></a>
+          </div>
+        </div>
+
+        <form class="contact-form d-flex flex-column align-items-center" action="https://formspree.io/f/xleooegn"
+          method="POST">
+          <div class="form-group w-75">
+            <input type="name" class="form-control" placeholder="Name" name="name" required />
+          </div>
+          <div class="form-group w-75">
+            <input type="email" class="form-control" placeholder="Email" name="_replyto" required />
+          </div>
+
+          <div class="form-group w-75">
+            <textarea class="form-control" type="text" placeholder="Message" rows="5" name="Message"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit w-75 light-bg">Send</button>
+        </form>
       </div>
-    </nav>
-
-    <!--header/about me-->
-    <div class="container mb-0 pb-0 pb-lg-3 mt-lg-3 navbar-section header-section" id="">
-      <div class="row d-flex flex-wrap align-items-center px-4">
-        <div class="col-12 col-lg-7 order-12 order-md-1">
-            <div style="background:transparent !important" class="jumbotron pl-0 pt-4 pb-0">
-              <h2 class="display-4" id="greeting">Hello! I'm Carol.</h2>
-              <p class="lead">I am a Chinese-American student, artist, and software engineer focused on backend development for consumer-facing products.
-                I currently study <a class="link" href="https://www.cs.usc.edu/academic-programs/undergrad/computer-engineering-and-computer-science/" target="_blank">computer engineering and computer science</a> 
-                at the <a class="link" href="https://www.usc.edu/" target="_blank">University of Southern California</a>. 
-                This summer, I'll be interning at <a class="link" href="https://stripe.com/" target="_blank">Stripe</a> as a software engineer in NYC.</p>
-              <p class="lead">I'm passionate about the intersection between the human experience, technology, and art, and believe that usability and accessibility in a product is just as important as its underlying technical capabilities. 
-                I hope to create meaningful experiences and opportunities using my background in the fine arts and computer science.</p>
-              <p class="lead">My interests include oil painting, personal finance, eating good food, and pushing for gender equity in the tech industry.
-                I volunteer with organizations such as the <a class="link" href="https://www.sweusc.com/" target="_blank">Society of Women Engineers</a> 
-                and <a href="https://techtogether.io/" target="_blank" class="link">TechTogether</a> to empower underrepresented groups in engineering.</p>
-              <p class="lead">Currently reading: <i>Development as Freedom</i> by <a class="link" href="https://scholar.harvard.edu/sen/home" target="_blank">Amartya Sen</a>
-              <br>Currently learning: latte art, frontend dev (hence this website)</p>
-            </div>
-        </div>
-        <div class="col-11 col-lg-5 px-0 mx-auto mt-4 order-1 order-md-12 justify-content-center p-2 p-md-3 py-lg-3 shadow">
-          <div id="carouselIntroduction" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3300">
-            <div class="carousel-inner w-100">
-              <div class="carousel-item active">
-                <div class="carousel-img">
-                  <img class="img-fluid d-block w-100" src="images/me.png" alt="Carol Liang">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-img">
-                  <img class="img-fluid d-block w-100" src="images/bay_state.jpeg" alt="Carol Liang">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-img">
-                  <img class="img-fluid d-block w-100" src="images/night_lights.jpeg" alt="Carol Liang">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--engineering experience-->
-    <div class="container navbar-section" id="engineering">
-        <div class="mx-1 mx-lg-5 text-center">
-          <h3 class="display-4 section mt-0">ENGINEERING</h3>
-        </div>
-        <div class="row d-flex flex-column mx-1 mx-lg-5 px-3 px-lg-4">
-          <div class="my-2">
-            <h4>Featured Project: FriendFlix</h4>
-            <div class="lead">Full stack web application that facilitates sharing of movies and shows with your community. Created using the <a class="link" href="https://www.mongodb.com/mern-stack" target="_blank">MERN</a>
-              stack (MongoDB, Express, React and Node.js). Used 
-              the <a class="link" href="https://developers.themoviedb.org/" target="_blank">MovieDB API</a> for accessing movie and TV databases and 
-              <a class="link" href="https://getstream.io/" target="_blank">GetStream</a> for asynchronous activity feeds. 
-              Features include a real-time friend feed for updates on what your friends are watching, integrated information on each show and movie, and recommendations for your next watch.<br>Source code and build instructions 
-              <a class="link" href="https://github.com/cchuqiao/friendflix" target="_blank">here</a>.
-              <br> Presentation deck <a class="link" href="https://docs.google.com/presentation/d/e/2PACX-1vQEUlppvVk1zEjTBfzvpjlqF6fvOicceYuLmlZw0v3D_2tirs7sY4V1bLTaATdquZ5_CUh3cIM2wxG-/pub?start=true&loop=true&delayms=5000" target="_blank">here</a>.
-            </div>
-            <div id="friendflixCarousel" class="carousel slide my-3" data-ride="carousel" data-interval="3300">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/friendflix-home.png" alt="friendflix home">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/friendflix-login.png" alt="friendflix login">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/friendflix-signup.png" alt="friendflix login">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/friendflix-focus.png" alt="friendflix focus">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#friendflixCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#friendflixCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-          <div class="my-2">
-            <h4>Professional Experience</h4>
-            <div class="row my-3">
-              <div class="col-12 experiences">
-                <a class="link" href="https://www.splunk.com/" target="_blank"><h5>Splunk Technology</h5></a>
-                <div class="lead"><i>Software Engineering Intern on the Indexing team // San Francisco, CA</i></div>
-                <div class="lead">(Summer 2020) Built out features to improve performance and usability of SmartStore, Splunk's cloud storage solution. 
-                  Definitely my most difficult experience thus far due to the nature of the product and the C++ language. Learned a lot about 
-                  performance optimization, distributed systems, industry-level C++, and ramping up to a huge codebase virtually.</div>
-              </div>
-            </div>
-            <div class="row my-3">
-              <div class="col-12 experiences">
-                <a class="link" href="https://www.linkedin.com/" target="_blank"><h5>LinkedIn</h5></a>
-                <div class="lead"><i>Software Engineering Intern on the Flagship Search team // Mountain View, CA</i></div>
-                <div class="lead">(Fall 2019) Designed and built a client-facing feature to collect feedback from LinkedIn users 
-                  directly on their search page. Acted as a project manager too, since this feature was built from
-                  the ground up, including meeting with legal teams. Learned about fullstack 
-                  and API development in Ember and Java/Play, cross-team collaboration, user empathy, and how 
-                  to set up lots of meetings.</div>
-              </div>
-            </div>
-            <div class="row my-3">
-              <div class="col-12 experiences">
-                <a class="link" href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank"><h5>Intel Corporation</h5></a>
-                <div class="lead"><i>Software Engineering Intern on the Multimedia team // Portland, OR</i></div>
-                <div class="lead">(Summer 2019) My first engineering internship. Developed audio capabilities/features for 
-                  Intel's video conferencing software using PortAudio APIs and WebRTC. Learned about C# and C/C++ app development, software testing and profiling, 
-                 and how to navigate corporate culture.</div>
-              </div>
-            </div>
-            <div class="row my-3">
-              <div class="col-12 experiences">
-                <a class="link" href="https://rapidsos.com/" target="_blank"><h5>RapidSOS</h5></a>
-                <div class="lead"><i>Operations Intern // New York City, NY</i></div>
-                <div class="lead">(Summer 2018) My first internship ever! After my first year of college, I worked across HR, marketing, internal operations, and legal to implement new security processes
-                  and implement diversity and inclusion initiatives at this healthcare tech startup. Learned about the recruitment lifecycle, cross-team collaboration, and my interest in working
-                  at a startup for fulltime.</div>
-              </div>
-            </div>
-          </div>
-          <div class="my-2">
-            <h4>Teaching Experience</h4>
-            <div class="row my-3">
-              <div class="col-12 experiences">
-                <a class="link" href="https://viterbischool.usc.edu/" target="_blank"><h5>University of Southern California</h5></a>
-                <div class="lead"><i>Course Producer for CSCI201: Software Engineering // Los Angeles, CA</i></div>
-                <div class="lead">(Spring 2020) Taught students the fundamentals of software engineering through labs and office hours, as well as graded assignments and projects. 
-                  Content included: Java, concurrency, object-oriented programming, frontend languages, full-stack web development using MERN, SQL, group projects using agile methodology.
-                </div>
-              </div>
-            </div>
-            <div class="row my-3">
-              <div class="col-12 experiences">
-                <a class="link" href="https://www.bu.edu/" target="_blank"><h5>Boston University</h5></a>
-                <div class="lead"><i>Teaching Assistant for EC330: Applied Algorithms // Boston, MA</i></div>
-                <div class="lead">(Spring 2019) Taught students core data structures and algorithms concepts with C++ through labs and office hours, as well as completed and graded assignments and projects. 
-                  Topics included: big-O analysis, proofs of correctness and runtime, graph algorithms, searching and sorting algorithms, dynamic programming, optimized data structures.
-                </div>
-              </div>
-          </div>
-          </div>
-          <div class="my-2">
-            <h4>Technical Skills</h4>
-            <div class="d-flex flex-wrap row my-3 text-center">
-              <div class="col-3 col-md">
-                <img src="images/cpp.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/java.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/javascript.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/html.jpg" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/python.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/mysql.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/matlab.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-              <div class="col-3 col-md">
-                <img src="images/git.png" style="max-width:60px;height:auto" class="img-fluid skill">
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!--artwork-->
-    <div class="container navbar-section" id="artwork">
-      <div class="mx-5 text-center mb-3">
-        <h3 class="display-4 section">ARTWORK</h3>
-        <div class="lead">Please contact me if you would like to purchase a painting or request a commission.</div>
-      </div>
-      <div class="row justify-content-center shadow py-md-5" id="gallery">
-        <div class="col-md-5 col-sm-11 art-grid">
-          <a href="javascript:void(0);"><img class="art-image" src="images/piano.JPG"></a>
-          <div class="art-info">
-            <p class="lead">Used Piano (oil, sold) </p>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-11 art-grid">
-          <a href="javascript:void(0);"><img class="art-image" id="art-diego" src="images/diego_desk.JPG"></a>
-          <div class="art-info">
-            <p class="lead">Anniversary Pink (oil, sold)</p>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-11 art-grid">
-          <a href="javascript:void(0);"><img class="art-image" src="images/seattle.jpg"></a>
-          <div class="art-info">
-            <p class="lead">Seattle Sunset (acrylic)</p>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-11 art-grid">
-          <a href="javascript:void(0);"><img class="art-image" id="art-dog" src="images/dog.jpg"></a>
-          <div class="art-info">
-            <p class="lead">Lily (oil, sold)</p>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-11 art-grid">
-          <a href="javascript:void(0);"><img class="art-image" src="images/march_2.jpg"></a>
-          <div class="art-info">
-            <p class="lead">Women's March (acrylic)</p>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-11 art-grid">
-          <a href="javascript:void(0);"><img class="art-image" src="images/waterfall_v2.jpg"></a>
-          <div class="art-info">
-            <p class="lead">Lush Sun (oil pastel)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--resume-->
-    <div class="container navbar-section" id="resume">
-      <div class="mx-5 text-center mb-3">
-        <h3 class="display-4 section">RESUMÉ</h3>
-        <div class="row mx-auto" style="width:50%">
-          <div class="col-12 col-md-6">
-            <a class="link" href="./CarolLiang_resume.pdf" target="_blank"><h5>Preview</h5></a>
-          </div>
-          <div class="col-12 col-md-6">
-            <a class="link" download href="./CarolLiang_resume.pdf"><h5>Download</h5></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--contact-->
-    <div class="container navbar-section" id="contact">
-      <section class="resume-section text-center mb-4 mx-lg-5" id="contact">
-        <div class="my-auto">
-          <h3 class="mb-2 display-4 section">CONTACT ME</h3>
-
-          <ul class="fa-ul mb-4 ml-0 lead">
-            <li>carollia[at]usc[dot]edu // 508.816.1405</li>
-          </ul>
-
-          <p class="lead">
-            ...or leave your message below and I will be back to you as soon as
-            possible. <br> Feel free to also connect with me on LinkedIn or Instagram, or see some of my work on Github.
-          </p>
-
-          <div class="row mx-3 my-4 mx-auto" style="width:40%">
-            <div class="col-6 col-md-3 text-center social-icon">
-              <a href="https://www.linkedin.com/in/carolliangce/" target="_blank" title="linkedin profile"><img src="images/linkedin.png" style="max-width:50px;height:auto" class="img-fluid"></a>
-            </div>
-            <div class="col-6 col-md-3 text-center social-icon">
-              <a href="https://github.com/cchuqiao" target="_blank" title="github profile"><img src="images/github.png" style="max-width:50px;height:auto" class="img-fluid"></a>
-            </div>
-            <div class="col-6 col-md-3 text-center social-icon">
-              <a href="https://www.instagram.com/_chuqiao/" target="_blank" title="instagram profile"><img src="images/instagram.png" style="max-width:50px;height:auto" class="img-fluid"></a>
-            </div>
-            <div class="col-6 col-md-3 text-center social-icon">
-              <a href="mailto: carollia@usc.edu" target="_blank" title="email"><img src="images/email.png" style="max-width:50px;height:auto" class="img-fluid"></a>
-            </div>
-          </div>
-
-          <form
-            class="contact-form d-flex flex-column align-items-center"
-            action="https://formspree.io/f/xleooegn"
-            method="POST"
-          >
-            <div class="form-group w-75">
-              <input
-                type="name"
-                class="form-control"
-                placeholder="Name"
-                name="name"
-                required
-              />
-            </div>
-            <div class="form-group w-75">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Email"
-                name="_replyto"
-                required
-              />
-            </div>
-
-            <div class="form-group w-75">
-              <textarea
-                class="form-control"
-                type="text"
-                placeholder="Message"
-                rows="5"
-                name="Message"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-submit w-75 light-bg">Send</button>
-          </form>
-        </div>
-      </section>
+    </section>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
       integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
       crossorigin="anonymous"></script>
+  </div>
+
+
+  <!--copyright footer-->
+  <footer class="mt-5 py-2 text-center text-lg-start shadow">
+    <div class="text-center p-3 lead" style="font-size: small;">
+      © 2020 Copyright: Carol Liang <br> Coded with <i class="far fa-heart" aria-hidden></i>
     </div>
+  </footer>
 
+</body>
 
-    <!--copyright footer-->
-    <footer class="mt-5 py-2 text-center text-lg-start shadow">
-      <div class="text-center p-3 lead" style="font-size: small;">
-        © 2020 Copyright: Carol Liang <br> Coded with <i class="far fa-heart" aria-hidden></i>
-      </div>
-    </footer>
-
-  </body>
 </html>
